@@ -94,7 +94,8 @@ function Map() {
   const [lineOpacity, setLineOpacity] = useState(1);
 
   const api = what3words();
-  api.setApiKey(import.meta.env.VITE_API_KEY ?? "");
+  // api.setApiKey(import.meta.env.VITE_API_KEY ?? "");
+  api.setApiKey(process.env.API_KEY ?? "");
 
   useEffect(() => {
     const id = navigator.geolocation.watchPosition(
@@ -156,8 +157,11 @@ function Map() {
     setClaimed(true);
   };
 
-  if (!hasAccessToLocation || !initialCoords)
-    return <div style={{ margin: "2rem" }}>Loading...</div>;
+  if (!hasAccessToLocation || !initialCoords) {
+    return <div
+      style={{ margin: "2rem" }}
+    >Loading...</div>;
+  }
 
   return (
     <div style={{ position: "relative" }}>
