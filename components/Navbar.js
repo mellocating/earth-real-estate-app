@@ -29,11 +29,11 @@ export default function Navbar() {
             <Text
               textAlign={useBreakpointValue({ base: "center", md: "left" })}
               fontFamily={"heading"}
-              fontSize="4xl"
+              fontSize="2xl"
               fontWeight={"bold"}
-              color={useColorModeValue("purple.200", "gray.200")}
+              color={useColorModeValue("white", "gray.100")}
             >
-              NFT Real Estate
+              E(AR)TH
             </Text>
           </Link>
         </Flex>

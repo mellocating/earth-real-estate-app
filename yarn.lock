@@ -2191,6 +2191,11 @@
   dependencies:
     antlr4ts "^0.5.0-alpha.4"
 
+"@stencil/core@^2.13.0":
+  version "2.18.1"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.18.1.tgz#f45e99b7abe2a0fa90d3141363601a68df5c08a7"
+  integrity sha512-/fXkh1lwZ+X9JQCw50mPjhBogzEHOBvVC5pLoDLZqodVYK0DGWILM2YLV4dcIUBNEK8/HMDpO/Rq81/rS3mNOw==
+
 "@swc/helpers@0.4.11":
   version "0.4.11"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.4.11.tgz#db23a376761b3d31c26502122f349a21b592c8de"
@@ -2399,10 +2404,29 @@
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.7.1.tgz#dfd20e2dc35f027cdd6c1908e80a5ddc7499670e"
   integrity sha512-ri0UmynRRvZiiUJdiz38MmIblKK+oH30MztdBVR95dv/Ubw6neWSb8u1XpRb72L4qsZOhz+L+z9JD40SJmfWow==
 
+"@types/prop-types@*":
+  version "15.7.5"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
+  integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
+
 "@types/qs@^6.2.31":
   version "6.9.7"
   resolved "https://registry.yarnpkg.com/@types/qs/-/qs-6.9.7.tgz#63bb7d067db107cc1e457c303bc25d511febf6cb"
   integrity sha512-FGa1F62FT09qcrueBA6qYTrJPVDzah9a+493+o2PCXsesWHIn27G98TsSMs3WPNbZIEj4+VJf6saSFpvD+3Zsw==
+
+"@types/react@18.0.21":
+  version "18.0.21"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.21.tgz#b8209e9626bb00a34c76f55482697edd2b43cc67"
+  integrity sha512-7QUCOxvFgnD5Jk8ZKlUAhVcRj7GuJRjnjjiY/IUBWKgOlnvDvTMLD4RTF7NPyVmbRhNrbomZiOepg7M/2Kj1mA==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/scheduler@*":
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
+  integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
 "@types/secp256k1@^4.0.1":
   version "4.0.3"
@@ -2699,6 +2723,36 @@
   integrity sha512-9eFvmJxIKCC3YWOL97SgRkKhlyGXkrHwamfechmqszbypFspaSk+t2jQXAEU7YClHF6Qjw5eYOmy1//zFi9/GA==
   dependencies:
     "@walletconnect/window-getters" "^1.0.0"
+
+"@what3words/api@^3.3.6":
+  version "3.3.6"
+  resolved "https://registry.yarnpkg.com/@what3words/api/-/api-3.3.6.tgz#b34bad1677db99fdaddeab19f2bd8e2b0d5bf456"
+  integrity sha512-miV8QmCc3hjDpmhQxe/rSCnx6AFxxCKBOZgVP++G8Zx0Y/hLAwRZVyHsFppuj2UMUwbT6vXsmPbd7gU3D8Jxlw==
+  dependencies:
+    axios "^0.21.1"
+
+"@what3words/api@^4.0.7":
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/@what3words/api/-/api-4.0.7.tgz#d5dc33faa7c8a1838d524aeef973bcb1f4769672"
+  integrity sha512-EZTKnLE62hKOFgpeilUZLrMF/AMHwzceyJtXQmmA7pgQUlNFjoW6LyDi31A9Jn1rpulkagKZ2Kof/C6ZIZ+Xog==
+
+"@what3words/javascript-components@^4.0.6":
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/@what3words/javascript-components/-/javascript-components-4.0.6.tgz#b2c7d551467990491df1f0e5cc2419875c661266"
+  integrity sha512-30BJKyG9uEUZldmOg09SrXhzk8uNVUUUHU2ZrcmNAj6q8B3vw0BELvdlYtksHKGOeSyaBZlAq452j1KQTmKxtw==
+  dependencies:
+    "@stencil/core" "^2.13.0"
+    "@what3words/api" "^3.3.6"
+    axios "^0.21.1"
+    querystring "^0.2.1"
+    uuid "^8.3.2"
+
+"@what3words/react-components@^4.0.6":
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/@what3words/react-components/-/react-components-4.0.6.tgz#0e272cd1ac7f68719558bc3c28a10ebb337885c2"
+  integrity sha512-PWm2iv/krsRy1a7VKkZu7FHIwwnd+agIk9UuRjbBpkeHgMPv0+W/cNcTZPahiAiQcynNSQqziYCHG3ugAPSCcg==
+  dependencies:
+    "@what3words/javascript-components" "^4.0.6"
 
 "@wry/context@^0.6.0":
   version "0.6.1"
@@ -3102,7 +3156,7 @@ axe-core@^4.4.3:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.4.3.tgz#11c74d23d5013c0fa5d183796729bc3482bd2f6f"
   integrity sha512-32+ub6kkdhhWick/UjvEwRchgoetXqTK14INLqbGm5U2TzBkBNF3nQtLYm8ovxSkQWArjEQvftCKryjZaATu3w==
 
-axios@^0.21.0:
+axios@^0.21.0, axios@^0.21.1:
   version "0.21.4"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
   integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
@@ -6247,6 +6301,11 @@ language-tags@^1.0.5:
   dependencies:
     language-subtag-registry "~0.3.2"
 
+leaflet@^1.9.2:
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/leaflet/-/leaflet-1.9.2.tgz#168b6c6ef1d4d1e8409bde2c4ad050c249c4dbe6"
+  integrity sha512-Kc77HQvWO+y9y2oIs3dn5h5sy2kr3j41ewdqCMEUA4N89lgfUUfOBy7wnnHEstDpefiGFObq12FdopGRMx4J7g==
+
 level-supports@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/level-supports/-/level-supports-4.0.1.tgz#431546f9d81f10ff0fea0e74533a0e875c08c66a"
@@ -7249,6 +7308,11 @@ query-string@6.13.5:
     decode-uri-component "^0.2.0"
     split-on-first "^1.0.0"
     strict-uri-encode "^2.0.0"
+
+querystring@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.1.tgz#40d77615bb09d16902a85c3e38aa8b5ed761c2dd"
+  integrity sha512-wkvS7mL/JMugcup3/rMitHmd9ecIGd2lhFhK9N3UUQ450h66d1r3Y9nvXzQAW1Lq+wyx61k/1pfKS5KuKiyEbg==
 
 queue-microtask@^1.2.2, queue-microtask@^1.2.3:
   version "1.2.3"
